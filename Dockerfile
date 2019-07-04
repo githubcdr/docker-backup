@@ -11,7 +11,7 @@ LABEL \
 
 WORKDIR /tmp
 
-RUN	apk add --update --no-cache xz ca-certificates restic mariadb-client xz wget curl \
+RUN	apk add --update --no-cache xz ca-certificates restic mariadb-client xz wget curl rsync \
 	&& curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip \
 	&& unzip rclone-current-linux-amd64.zip \
 	&& cd rclone-*-linux-amd64 \
