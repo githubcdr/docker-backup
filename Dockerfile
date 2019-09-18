@@ -11,7 +11,9 @@ LABEL \
 
 WORKDIR /tmp
 
-RUN	apk add --update --no-cache xz ca-certificates restic mariadb-client wget curl openssh-client rsync \
+RUN	   echo "@edge http://nl.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
+	&& echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+	&& apk add --update --no-cache xz ca-certificates restic mariadb-client wget curl openssh-client rsync burp@testing \
 	&& curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip \
 	&& unzip rclone-current-linux-amd64.zip \
 	&& cd rclone-*-linux-amd64 \
