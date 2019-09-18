@@ -4,6 +4,7 @@ Alpine based backup tools
 
 - rsync
 - restic
+- burp
 - rclone
 - openssh-client
 - mariadb-client
