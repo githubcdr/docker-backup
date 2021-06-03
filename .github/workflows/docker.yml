@@ -5,7 +5,7 @@ on:
   #  tags:
   #    - 'v*.*.*'
   schedule:
-    - cron: '@daily'
+    - cron: '5 4 * * *'
   release:
     types: [published]
 
