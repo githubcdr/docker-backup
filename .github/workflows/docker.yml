@@ -4,6 +4,8 @@ on:
   #push:
   #  tags:
   #    - 'v*.*.*'
+  schedule:
+    - cron: '@daily'
   release:
     types: [published]
 
