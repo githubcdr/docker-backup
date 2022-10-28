@@ -1,3 +1,5 @@
+# deprecated in favor of docker/hosting-tools
+
 # docker-backup
 
 Alpine based backup tools
